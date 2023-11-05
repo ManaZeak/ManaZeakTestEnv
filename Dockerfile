@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:21-jdk-alpine
 RUN apk add maven curl git firefox chromium
 RUN apk add nodejs-current  --repository="http://dl-cdn.alpinelinux.org/alpine/edge/community"
 RUN mkdir -p /resources/avatars/
