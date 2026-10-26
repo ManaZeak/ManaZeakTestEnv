@@ -1,5 +1,5 @@
 FROM eclipse-temurin:21-jdk-alpine
-RUN apk add maven curl git firefox chromium icu-libs --no-cache
+RUN apk add maven curl git firefox chromium icu-libs simdjson --no-cache
 RUN apk add nodejs-current  --repository="http://dl-cdn.alpinelinux.org/alpine/edge/community" --no-cache
 RUN mkdir -p /resources/avatars/
 RUN chmod -R 777 /resources/
